@@ -1,1 +1,1 @@
-# fair-txn-scheduler
+# Simple Fair Transaction Scheduler
