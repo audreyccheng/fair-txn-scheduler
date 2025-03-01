@@ -1107,7 +1107,7 @@ class OptimisticTransactionDBImpl : public OptimisticTransactionDB {
   std::map<uint16_t, std::map<uint16_t, std::vector<WriteCallback *>>> cluster_hash_clients_;
 
   // // protected by sys_mutex
-  // uint32_t max_queue_len_; // threshold on batch size
+  uint32_t max_queue_len_; // threshold on batch size
   // std::vector<Transaction *> sched_txns_; // txns to be scheduled
   // std::vector<WriteCallback *> sched_callbacks_; // corresponding callbacks
 
