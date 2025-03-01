@@ -42,7 +42,7 @@ public class WriteTransaction extends BenchmarkTransaction {
 
             client.startTransaction();
 
-            for (int i = 0; i < this.txnSize; i++) {
+            for (int i = 0; i < this.txnSize; i++) { // update mammoths
                 Integer objIdRand = -1;
                 while (objIdRand < 0) {
                     Integer key;
